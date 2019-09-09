@@ -52,7 +52,7 @@ btPairCachingGhostObject* btKinematicCharacterController_getGhostObject(btKinema
 void btKinematicCharacterController_getGravity(btKinematicCharacterController* obj,
 	btVector3* value)
 {
-	BTVECTOR3_SET(value, obj->getGravity());
+	BTVECTOR3_COPY(value, obj->getGravity());
 }
 
 btScalar btKinematicCharacterController_getJumpSpeed(btKinematicCharacterController* obj)
@@ -68,7 +68,7 @@ btScalar btKinematicCharacterController_getLinearDamping(btKinematicCharacterCon
 void btKinematicCharacterController_getLinearVelocity(btKinematicCharacterController* obj,
 	btVector3* value)
 {
-	BTVECTOR3_SET(value, obj->getLinearVelocity());
+	BTVECTOR3_COPY(value, obj->getLinearVelocity());
 }
 
 btScalar btKinematicCharacterController_getMaxPenetrationDepth(btKinematicCharacterController* obj)
