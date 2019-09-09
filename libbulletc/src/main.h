@@ -3,10 +3,10 @@
 #include <stddef.h> // size_t
 
 //#define BULLETC_DISABLE_HACD
-#define BULLETC_DISABLE_IACTION_CLASSES // omits classes inheriting from btActionInterface
-#define BULLETC_DISABLE_GEOMETRY_UTIL
-#define BULLETC_DISABLE_SOFTBODY_HELPERS
-#define BULLETC_DISABLE_WORLD_IMPORTERS
+//#define BULLETC_DISABLE_IACTION_CLASSES // omits classes inheriting from btActionInterface
+//#define BULLETC_DISABLE_GEOMETRY_UTIL
+//#define BULLETC_DISABLE_SOFTBODY_HELPERS
+//#define BULLETC_DISABLE_WORLD_IMPORTERS
 
 #ifdef _MSC_VER
 #define EXPORT __declspec(dllexport)
