@@ -123,7 +123,7 @@ int btRaycastVehicle_getForwardAxis(btRaycastVehicle* obj)
 
 void btRaycastVehicle_getForwardVector(btRaycastVehicle* obj, btVector3* value)
 {
-	BTVECTOR3_SET(value, obj->getForwardVector());
+	BTVECTOR3_COPY(value, obj->getForwardVector());
 }
 
 int btRaycastVehicle_getNumWheels(btRaycastVehicle* obj)
